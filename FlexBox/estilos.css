@@ -1,0 +1,37 @@
+div {
+    width: 100%;
+    height: 500px;
+    border: 2px solid blue;
+    color: #fff;
+    font-size: 50px;
+    line-height: 100px;
+    margin: auto;
+}
+
+article {
+   width: 150px;
+    height: 100px;
+    background: orange;
+    text-align: center;
+    margin: 10px;
+}
+
+.container{
+   display: flex;
+   align-items: baseline;
+}
+
+.item {    
+}
+
+.uno {
+   font-size: 80px;
+}
+
+.dos{
+   font-size: 30px;
+}
+
+.tres{
+
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <title>Formulario Contacto Responsive CSS</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+            <link rel="stylesheet" href="css/estilos.css">
+            <script src="validar.js"></script>
+        </head>  
+        <body> <!-- Emmet shortcut  nav.menu>ul>li*4>a[#]>{item $}
+        form>h2{CONTACTO}+input*3+textarea  -->
+        <h1>Formulario de Registro</h1>
+        <form action="registrar.php" metod="post" class="form-register" onsubmit="return validar();">
+        <h2 class="form-title">CREAR UNA CUENTA</h2>
+        <div class="contenedor-inputs">
+          <div class="input-48">
+            <label for="nombres" class="label-48">Nombres <span>(min 3 - max 30)</span></label>
+            <input type="text" id="nombres" name="nombres" placeholder="Nombres"  maxlength="30" required>
+          </div>
+          <div class="input-48">
+            <label for="apellidos" class="label-48">Apellidos <span>(min 3 - max 80)</span></label>
+        	  <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" maxlength="80" required>
+					</div>
+        	<label for="email" class="label-100">e-mail</label>
+        	<input type="email" id="email" name="email" placeholder="e-mail" class="input-100"
+        	maxlength="100" required>
+        	<div class="input-48">
+        	  <label for="usuario" class="label-48">Usuario <span>(min 8 - max 20)</span></label>
+        	  <input type="text" id="usuario" name="usuario" placeholder="Usuario"
+        	  maxlength="20" required>
+					</div>
+       	  <div class="input-48">
+        	  <label for="password" class="label-48">Password <span>(min 8 - max 20)</span></label>
+        	  <input type="password" id="password" name="password" placeholder="password"
+        	  maxlength="20" required>
+					</div>
+        	<label for="telefono" class="label-100">Teléfono <span>(max 10)</span></label>
+        	<input type="text" id="telefono" name="telefono" placeholder="Teléfono" class="input-100"
+        	maxlength="10" required>
+        	<input type="submit" value="Registrar" class="btn-enviar" required>
+        	<!-- p{¿Ya tienes una cuenta?}>a{Ingresa Aquí} -->
+        	<p class="form-link">¿Ya tienes una cuenta?<a href="#"> Ingresa Aquí</a></p>
+        </div>
+        </form>
+        </body>
+    </html>

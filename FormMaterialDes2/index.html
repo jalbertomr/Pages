@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/estilos.css">  <!-- link[css/estilos] -->
+	<title>Formulario tipo Material Design 2</title>
+</head>
+<body>
+	<div class="contenedor-formulario">
+		<div class="wrap">
+			<form action="" class="formulario" name="formulario_registro" method="post">
+			<div>
+				<div class="input-group">
+					<input type="text" id="nombre" name="nombre">
+					<label for="nombre" class="label">Nombre: </label>
+				</div>
+				<div class="input-group">
+					<input type="email" id="email" name="email">
+					<label for="email" class="label">Correo:</label>
+				</div>
+				<div class="input-group">
+					<input type="password" id="password" name="password">
+					<label for="password" class="label">Password:</label>
+				</div>
+				<div class="input-group">
+					<input type="password" id="password2" name="password2">
+					<label for="password2" class="label">Confirmar Password:</label>
+				</div>
+				<div class="input-group radio">
+					<input type="radio" name="sexo" id="hombre" value="Hombre">
+					<label for="hombre">Hombre</label>
+
+					<input type="radio" name="sexo" id="mujer" value="Mujer">
+					<label for="mujer">Mujer</label>
+				</div>
+				<div class="input-group checkbox">
+					<input type="checkbox" name="terminos" id="terminos" value="true">
+					<label for="terminos">Acepto los terminos y condiciones</label>
+				</div>
+				<input type="submit" id="btn-submit" value="Enviar">
+			</div>
+		</form>
+		</div>
+	</div>
+	<script src="js/formulario.js">
+	</script>
+</body>
+</html>

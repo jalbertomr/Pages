@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+		<title>Formulario Contacto Responsive CSS</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+		<link rel="stylesheet" href="css/estilos.css">
+		<script src="../../jquery-validation-1.15.0/lib/jquery.js"></script>
+		<script src="../../js/jquery-1.11.3.js"></script>
+		<script src="../../jquery-validation-1.15.0/dist/jquery.validate.js"></script>
+		<script src="../../jquery-validation-1.15.0/dist/localization/messages_es.js"></script>           
+  </head>  
+	<body> <!-- Emmet shortcut  nav.menu>ul>li*4>a[#]>{item $}
+	form>h2{CONTACTO}+input*3+textarea  -->
+	<h1>Formulario de Registro</h1>
+	<form action="registrar.php" metod="post" class="form-register" onsubmit="return validar();">
+	<h2 class="form-title">CREAR UNA CUENTA</h2>
+	<div class="contenedor-inputs">
+		<input type="text" id="nombres" name="nombres" placeholder="Nombres" class="input-48" maxlength="30" required>
+		<input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="input-48" maxlength="80" required>
+		<input type="email" id="email" name="email" placeholder="e-mail" class="input-100"
+		maxlength="100" required>
+		<input type="text" id="usuario" name="usuario" placeholder="Usuario" class="input-48"
+		maxlength="20" required>
+		<input type="text" id="password" name="password" placeholder="password" class="input-48"
+		maxlength="20" required>
+		<input type="text" id="telefono" name="telefono" placeholder="Teléfono" class="input-100"
+		maxlength="10" required>
+		<input type="submit" value="Registrar" class="btn-enviar" required>
+		<!-- p{¿Ya tienes una cuenta?}>a{Ingresa Aquí} -->
+		<p class="form-link">¿Ya tienes una cuenta?<a href="#"> Ingresa Aquí</a></p>
+	</div>
+	</form>
+	</body>
+</html>

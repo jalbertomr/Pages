@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <title>Formulario Contacto Responsive CSS</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+            <link rel="stylesheet" href="css/estilos.css">
+        </head>  
+        <body> <!-- Emmet shortcut  nav.menu>ul>li*4>a[#]>{item $}
+        form>h2{CONTACTO}+input*3+textarea  -->
+        <h1>Formulario de Registro</h1>
+        <form action="registrar.php" metod="post" class="form-register">
+        <h2 class="form-title">CREAR UNA CUENTA</h2>
+        <div class="contenedor-inputs">
+        	<input type="text" name="nombre" placeholder="Nombre" class="input-48" required>
+        	<input type="text" name="apellidos" placeholder="Apellidos" class="input-48" required>
+        	<input type="text" name="email" placeholder="e-mail" class="input-100" required>
+        	<input type="text" name="usuario" placeholder="Usuario" class="input-48" required>
+        	<input type="text" name="password" placeholder="password" class="input-48" required>
+        	<input type="text" name="telefono" placeholder="Teléfono" class="input-100" required>
+        	<input type="submit" value="Registrar" class="btn-enviar">
+        	<!-- p{¿Ya tienes una cuenta?}>a{Ingresa Aquí} -->
+        	<p class="form-link">¿Ya tienes una cuenta?<a href="#"> Ingresa Aquí</a></p>
+        </div>
+        </form>
+        </body>
+    </html>
